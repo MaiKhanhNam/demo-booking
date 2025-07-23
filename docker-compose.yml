@@ -1,0 +1,20 @@
+services:
+  booking:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: booking_image:latest
+    container_name: booking_container
+    ports:
+      - "5000:5000"
+    env_file:
+      - .env
+    restart: unless-stopped
+    volumes:
+      - .:/home/nammk/source
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    external: true

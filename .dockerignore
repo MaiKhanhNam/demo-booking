@@ -1,0 +1,23 @@
+# Loại trừ các file Python không cần thiết
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Loại trừ các file/thư mục liên quan đến git
+.git/
+.gitignore
+
+# Loại trừ file log
+*.log
+
+# Loại trừ các file tạm
+*.swp
+*.tmp
+*.bak
+
+# Loại trừ các file/thư mục khác không cần thiết
+docker-compose.override.yml
+.DS_Store
+.vscode/
+.idea/
